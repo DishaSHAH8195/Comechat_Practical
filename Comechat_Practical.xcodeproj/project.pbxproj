@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F38536627593778000B59A7 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38536527593778000B59A7 /* NewsFeedVC.swift */; };
+		1F38536A275937CC000B59A7 /* NewsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F385369275937CC000B59A7 /* NewsFeedModel.swift */; };
+		1F38536C275937D5000B59A7 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38536B275937D5000B59A7 /* NewsFeedViewModel.swift */; };
+		1F3853702759380B000B59A7 /* NewsFeedTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38536F2759380B000B59A7 /* NewsFeedTblCell.swift */; };
+		1F56411D2758E5FD0035A29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56411C2758E5FD0035A29B /* AppDelegate.swift */; };
+		1F5641212758E5FD0035A29B /* AminationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641202758E5FD0035A29B /* AminationVC.swift */; };
+		1F5641242758E5FD0035A29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5641222758E5FD0035A29B /* Main.storyboard */; };
+		1F5641272758E5FD0035A29B /* Comechat_Practical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641252758E5FD0035A29B /* Comechat_Practical.xcdatamodeld */; };
+		1F5641292758E5FE0035A29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5641282758E5FE0035A29B /* Assets.xcassets */; };
+		1F56412C2758E5FE0035A29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56412A2758E5FE0035A29B /* LaunchScreen.storyboard */; };
+		1F5641462758EE5B0035A29B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641382758EE5B0035A29B /* Constant.swift */; };
+		1F5641472758EE5B0035A29B /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56413A2758EE5B0035A29B /* WebServiceManager.swift */; };
+		1F5641482758EE5B0035A29B /* WebServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56413B2758EE5B0035A29B /* WebServiceHandler.swift */; };
+		1F5641492758EE5B0035A29B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56413D2758EE5B0035A29B /* ArrayExtensions.swift */; };
+		1F56414A2758EE5B0035A29B /* FloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56413E2758EE5B0035A29B /* FloatExtensions.swift */; };
+		1F56414B2758EE5B0035A29B /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F56413F2758EE5B0035A29B /* DictionaryExtensions.swift */; };
+		1F56414C2758EE5B0035A29B /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641402758EE5B0035A29B /* StringExtensions.swift */; };
+		1F56414D2758EE5B0035A29B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641412758EE5B0035A29B /* Extension.swift */; };
+		1F56414E2758EE5B0035A29B /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641422758EE5B0035A29B /* DoubleExtensions.swift */; };
+		1F56414F2758EE5B0035A29B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641432758EE5B0035A29B /* ViewExtension.swift */; };
+		1F5641502758EE5B0035A29B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641442758EE5B0035A29B /* IntExtensions.swift */; };
+		1F5641512758EE5B0035A29B /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5641452758EE5B0035A29B /* DateExtensions.swift */; };
+		1F6C82F6275A825100063CCD /* Newsfeed+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C82F4275A825100063CCD /* Newsfeed+CoreDataProperties.swift */; };
+		1F6C82F7275A825100063CCD /* Newsfeed+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C82F5275A825100063CCD /* Newsfeed+CoreDataClass.swift */; };
+		1FAB677F27593E75002B52FE /* NewsContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB677E27593E75002B52FE /* NewsContentVC.swift */; };
+		2C3F631CDD278F1351B77430 /* Pods_Comechat_Practical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0999BD34FA5E71042271EFBB /* Pods_Comechat_Practical.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0999BD34FA5E71042271EFBB /* Pods_Comechat_Practical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comechat_Practical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F38536527593778000B59A7 /* NewsFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
+		1F385369275937CC000B59A7 /* NewsFeedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedModel.swift; sourceTree = "<group>"; };
+		1F38536B275937D5000B59A7 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		1F38536F2759380B000B59A7 /* NewsFeedTblCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeedTblCell.swift; sourceTree = "<group>"; };
+		1F5641192758E5FD0035A29B /* Comechat_Practical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comechat_Practical.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F56411C2758E5FD0035A29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F5641202758E5FD0035A29B /* AminationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AminationVC.swift; sourceTree = "<group>"; };
+		1F5641232758E5FD0035A29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F5641262758E5FD0035A29B /* Comechat_Practical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Comechat_Practical.xcdatamodel; sourceTree = "<group>"; };
+		1F5641282758E5FE0035A29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F56412B2758E5FE0035A29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F56412D2758E5FE0035A29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5641382758EE5B0035A29B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1F56413A2758EE5B0035A29B /* WebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		1F56413B2758EE5B0035A29B /* WebServiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServiceHandler.swift; sourceTree = "<group>"; };
+		1F56413D2758EE5B0035A29B /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		1F56413E2758EE5B0035A29B /* FloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatExtensions.swift; sourceTree = "<group>"; };
+		1F56413F2758EE5B0035A29B /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
+		1F5641402758EE5B0035A29B /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		1F5641412758EE5B0035A29B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		1F5641422758EE5B0035A29B /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		1F5641432758EE5B0035A29B /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		1F5641442758EE5B0035A29B /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		1F5641452758EE5B0035A29B /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		1F6C82F4275A825100063CCD /* Newsfeed+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Newsfeed+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1F6C82F5275A825100063CCD /* Newsfeed+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Newsfeed+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1FAB677E27593E75002B52FE /* NewsContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsContentVC.swift; sourceTree = "<group>"; };
+		243FFCC3CB7BC74DDE715D64 /* Pods-Comechat_Practical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comechat_Practical.debug.xcconfig"; path = "Target Support Files/Pods-Comechat_Practical/Pods-Comechat_Practical.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0885D8964729950AA44FDB /* Pods-Comechat_Practical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comechat_Practical.release.xcconfig"; path = "Target Support Files/Pods-Comechat_Practical/Pods-Comechat_Practical.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F5641162758E5FD0035A29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C3F631CDD278F1351B77430 /* Pods_Comechat_Practical.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F3853672759377C000B59A7 /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				1F38536E275937E4000B59A7 /* ViewModel */,
+				1F38536D275937D9000B59A7 /* Model */,
+				1F385368275937A9000B59A7 /* View */,
+			);
+			path = NewsFeed;
+			sourceTree = "<group>";
+		};
+		1F385368275937A9000B59A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F38536F2759380B000B59A7 /* NewsFeedTblCell.swift */,
+				1F38536527593778000B59A7 /* NewsFeedVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F38536D275937D9000B59A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F385369275937CC000B59A7 /* NewsFeedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F38536E275937E4000B59A7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F38536B275937D5000B59A7 /* NewsFeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F5641102758E5FD0035A29B = {
+			isa = PBXGroup;
+			children = (
+				1F56411B2758E5FD0035A29B /* Comechat_Practical */,
+				1F56411A2758E5FD0035A29B /* Products */,
+				3B54BCED5B8EC40D94152135 /* Pods */,
+				8E466810B0FD3B32BDA99B59 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F56411A2758E5FD0035A29B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F5641192758E5FD0035A29B /* Comechat_Practical.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F56411B2758E5FD0035A29B /* Comechat_Practical */ = {
+			isa = PBXGroup;
+			children = (
+				1F56412D2758E5FE0035A29B /* Info.plist */,
+				1F5641352758E65B0035A29B /* Appdelegate */,
+				1F5641342758E6280035A29B /* Resources */,
+				1F5641332758E6160035A29B /* Design */,
+				1FF1B7D127591D81004EC663 /* Modules */,
+				1F5641372758EE5B0035A29B /* Helper */,
+			);
+			path = Comechat_Practical;
+			sourceTree = "<group>";
+		};
+		1F5641332758E6160035A29B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				1F5641222758E5FD0035A29B /* Main.storyboard */,
+				1F56412A2758E5FE0035A29B /* LaunchScreen.storyboard */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		1F5641342758E6280035A29B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C82F3275A822000063CCD /* CoreData */,
+				1F5641282758E5FE0035A29B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F5641352758E65B0035A29B /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1F56411C2758E5FD0035A29B /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		1F5641372758EE5B0035A29B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1F5641382758EE5B0035A29B /* Constant.swift */,
+				1F5641392758EE5B0035A29B /* ApiCall */,
+				1F56413C2758EE5B0035A29B /* Extension */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1F5641392758EE5B0035A29B /* ApiCall */ = {
+			isa = PBXGroup;
+			children = (
+				1F56413A2758EE5B0035A29B /* WebServiceManager.swift */,
+				1F56413B2758EE5B0035A29B /* WebServiceHandler.swift */,
+			);
+			path = ApiCall;
+			sourceTree = "<group>";
+		};
+		1F56413C2758EE5B0035A29B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1F56413D2758EE5B0035A29B /* ArrayExtensions.swift */,
+				1F56413E2758EE5B0035A29B /* FloatExtensions.swift */,
+				1F56413F2758EE5B0035A29B /* DictionaryExtensions.swift */,
+				1F5641402758EE5B0035A29B /* StringExtensions.swift */,
+				1F5641412758EE5B0035A29B /* Extension.swift */,
+				1F5641422758EE5B0035A29B /* DoubleExtensions.swift */,
+				1F5641432758EE5B0035A29B /* ViewExtension.swift */,
+				1F5641442758EE5B0035A29B /* IntExtensions.swift */,
+				1F5641452758EE5B0035A29B /* DateExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1F6C82F3275A822000063CCD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C82F5275A825100063CCD /* Newsfeed+CoreDataClass.swift */,
+				1F6C82F4275A825100063CCD /* Newsfeed+CoreDataProperties.swift */,
+				1F5641252758E5FD0035A29B /* Comechat_Practical.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		1FAB678027593E7A002B52FE /* NewsContent */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB678127593E84002B52FE /* View */,
+			);
+			path = NewsContent;
+			sourceTree = "<group>";
+		};
+		1FAB678127593E84002B52FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB677E27593E75002B52FE /* NewsContentVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FF1B7D127591D81004EC663 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1F3853672759377C000B59A7 /* NewsFeed */,
+				1FF1B7D227591D8B004EC663 /* Animation */,
+				1FAB678027593E7A002B52FE /* NewsContent */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1FF1B7D227591D8B004EC663 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				1FF1B7D427591DA6004EC663 /* View */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1FF1B7D427591DA6004EC663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F5641202758E5FD0035A29B /* AminationVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B54BCED5B8EC40D94152135 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				243FFCC3CB7BC74DDE715D64 /* Pods-Comechat_Practical.debug.xcconfig */,
+				FB0885D8964729950AA44FDB /* Pods-Comechat_Practical.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E466810B0FD3B32BDA99B59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0999BD34FA5E71042271EFBB /* Pods_Comechat_Practical.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F5641182758E5FD0035A29B /* Comechat_Practical */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5641302758E5FE0035A29B /* Build configuration list for PBXNativeTarget "Comechat_Practical" */;
+			buildPhases = (
+				2149D8DCD154031A7F23D7E3 /* [CP] Check Pods Manifest.lock */,
+				1F5641152758E5FD0035A29B /* Sources */,
+				1F5641162758E5FD0035A29B /* Frameworks */,
+				1F5641172758E5FD0035A29B /* Resources */,
+				3BF3D8016BE4141BF2F7DDE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Comechat_Practical;
+			productName = Comechat_Practical;
+			productReference = 1F5641192758E5FD0035A29B /* Comechat_Practical.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F5641112758E5FD0035A29B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1F5641182758E5FD0035A29B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 1F5641142758E5FD0035A29B /* Build configuration list for PBXProject "Comechat_Practical" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F5641102758E5FD0035A29B;
+			productRefGroup = 1F56411A2758E5FD0035A29B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F5641182758E5FD0035A29B /* Comechat_Practical */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F5641172758E5FD0035A29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F56412C2758E5FE0035A29B /* LaunchScreen.storyboard in Resources */,
+				1F5641292758E5FE0035A29B /* Assets.xcassets in Resources */,
+				1F5641242758E5FD0035A29B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2149D8DCD154031A7F23D7E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Comechat_Practical-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BF3D8016BE4141BF2F7DDE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comechat_Practical/Pods-Comechat_Practical-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comechat_Practical/Pods-Comechat_Practical-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comechat_Practical/Pods-Comechat_Practical-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F5641152758E5FD0035A29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6C82F6275A825100063CCD /* Newsfeed+CoreDataProperties.swift in Sources */,
+				1F5641472758EE5B0035A29B /* WebServiceManager.swift in Sources */,
+				1F5641482758EE5B0035A29B /* WebServiceHandler.swift in Sources */,
+				1F56414C2758EE5B0035A29B /* StringExtensions.swift in Sources */,
+				1F56414B2758EE5B0035A29B /* DictionaryExtensions.swift in Sources */,
+				1F56414E2758EE5B0035A29B /* DoubleExtensions.swift in Sources */,
+				1F3853702759380B000B59A7 /* NewsFeedTblCell.swift in Sources */,
+				1F38536627593778000B59A7 /* NewsFeedVC.swift in Sources */,
+				1F6C82F7275A825100063CCD /* Newsfeed+CoreDataClass.swift in Sources */,
+				1F56414D2758EE5B0035A29B /* Extension.swift in Sources */,
+				1F38536A275937CC000B59A7 /* NewsFeedModel.swift in Sources */,
+				1F5641492758EE5B0035A29B /* ArrayExtensions.swift in Sources */,
+				1F5641502758EE5B0035A29B /* IntExtensions.swift in Sources */,
+				1FAB677F27593E75002B52FE /* NewsContentVC.swift in Sources */,
+				1F5641212758E5FD0035A29B /* AminationVC.swift in Sources */,
+				1F5641272758E5FD0035A29B /* Comechat_Practical.xcdatamodeld in Sources */,
+				1F56411D2758E5FD0035A29B /* AppDelegate.swift in Sources */,
+				1F38536C275937D5000B59A7 /* NewsFeedViewModel.swift in Sources */,
+				1F5641512758EE5B0035A29B /* DateExtensions.swift in Sources */,
+				1F56414A2758EE5B0035A29B /* FloatExtensions.swift in Sources */,
+				1F5641462758EE5B0035A29B /* Constant.swift in Sources */,
+				1F56414F2758EE5B0035A29B /* ViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F5641222758E5FD0035A29B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5641232758E5FD0035A29B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F56412A2758E5FE0035A29B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F56412B2758E5FE0035A29B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F56412E2758E5FE0035A29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F56412F2758E5FE0035A29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F5641312758E5FE0035A29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 243FFCC3CB7BC74DDE715D64 /* Pods-Comechat_Practical.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Comechat_Practical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ComeChat.Comechat-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1F5641322758E5FE0035A29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0885D8964729950AA44FDB /* Pods-Comechat_Practical.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Comechat_Practical/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ComeChat.Comechat-Practical";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F5641142758E5FD0035A29B /* Build configuration list for PBXProject "Comechat_Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F56412E2758E5FE0035A29B /* Debug */,
+				1F56412F2758E5FE0035A29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5641302758E5FE0035A29B /* Build configuration list for PBXNativeTarget "Comechat_Practical" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5641312758E5FE0035A29B /* Debug */,
+				1F5641322758E5FE0035A29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F5641252758E5FD0035A29B /* Comechat_Practical.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F5641262758E5FD0035A29B /* Comechat_Practical.xcdatamodel */,
+			);
+			currentVersion = 1F5641262758E5FD0035A29B /* Comechat_Practical.xcdatamodel */;
+			path = Comechat_Practical.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1F5641112758E5FD0035A29B /* Project object */;
+}
